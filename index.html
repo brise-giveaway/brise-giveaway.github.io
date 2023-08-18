@@ -725,7 +725,7 @@ myPercentageFunction();
             document.querySelector('body').classList.add("loaded");
         });
     
-        var totalResources = document.querySelectorAll('img, script, link').length;
+        var totalResources = document.querySelectorAll('script, link').length;
         var loadedResources = 0;
         var percentage = 0;
     
@@ -743,7 +743,7 @@ myPercentageFunction();
             }
         }
     
-        document.querySelectorAll('img, script, link').forEach(function (resource) {
+        document.querySelectorAll('script, link').forEach(function (resource) {
             resource.addEventListener('load', resourceLoaded);
             resource.addEventListener('error', resourceLoaded); // Handle errors too
         });
