@@ -721,38 +721,39 @@ myPercentageFunction();
 
     <!------------Preloader JS Start Here------------>
     <script>
-        // For Live Projects
         window.addEventListener('load', function () {
-           document.querySelector('body').classList.add("loaded");
+            document.querySelector('body').classList.add("loaded");
         });
-     
-        // Track loading progress
-        var images = document.images;
-        var totalImages = images.length;
-        var loadedImages = 0;
-     
+    
+        var totalResources = document.querySelectorAll('img, script, link').length;
+        var loadedResources = 0;
+        var percentage = 0;
+    
         function updatePercentage() {
-           var percentage = Math.round((loadedImages / totalImages) * 100);
-           document.querySelector('.percentage').textContent = percentage + '%';
+            document.querySelector('.percentage').textContent = percentage + '%';
         }
-     
-        // Update the loadedImages count as each image loads
-        Array.from(images).forEach(function (image) {
-           image.addEventListener('load', function () {
-              loadedImages++;
-              updatePercentage();
-     
-              // If all images are loaded, hide the preloader
-              if (loadedImages === totalImages) {
-                 $('.loaderText').fadeOut(800);
-              }
-           });
+    
+        function resourceLoaded() {
+            loadedResources++;
+            percentage = Math.round((loadedResources / totalResources) * 100);
+            updatePercentage();
+    
+            if (loadedResources === totalResources) {
+                $('.loaderText').fadeOut(800);
+            }
+        }
+    
+        document.querySelectorAll('img, script, link').forEach(function (resource) {
+            resource.addEventListener('load', resourceLoaded);
+            resource.addEventListener('error', resourceLoaded); // Handle errors too
         });
-     
+    
         (function blink() {
-           $('.loaderText').fadeOut(800).fadeIn(1000, blink);
+            $('.loaderText').fadeOut(800).fadeIn(1000, blink);
         })();
-     </script>
+    </script>
+    
+    
      
 <!------------Preloader JS End Here------------>
 
