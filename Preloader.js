@@ -1,18 +1,3 @@
-
-        
-        
-/*
-* sPreLoader - jQuery plugin
-* Create a Loading Screen to preloader images and content for you website
-*
-* Name:         sPreLoader.js
-* Author:       Siful Islam - http://www.getsiful.com
-* Date:         06.08.16       
-* Version:      1.0
-* Example:  
-*   
-*/
-
 (function($) {
     var items               = new Array(),
         errors              = new Array(),
