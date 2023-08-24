@@ -989,8 +989,16 @@ html, body {
 
 .menu > li {
   margin: 0 1rem;
-  overflow: hidden;
+  overflow: visible;
 }
+
+@media screen and (max-width:1000px) {
+ .menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  }
+}
+
 
 .menu-button-container {
   display: none;
