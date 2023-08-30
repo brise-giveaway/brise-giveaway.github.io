@@ -1,4 +1,9 @@
-@charset "UTF-8";@media screen and (max-width:2560px){html{font-size:18px}}@media screen and (max-width:1920px){html{font-size:16px}}@media screen and (max-width:1600px){html{font-size:14px}}@media screen and (max-width:768px){html{font-size:12px}}@-webkit-keyframes fadeInDown{0%{opacity:0;transform:translateY(-100%)}100%{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-100%)}100%{opacity:1;transform:translateY(0)}}@-webkit-keyframes append-animate{from{transform:scaleY(0);opacity:0}to{transform:scaleY(1);opacity:1}}@keyframes append-animate{from{transform:scaleY(0);opacity:0}to{transform:scaleY(1);opacity:1}}*,:after,:before{padding:0;margin:0;box-sizing:border-box;box-shadow:none;font-family:Inter,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}html{scroll-behavior:smooth}body{background-color:#020306}section{overflow:hidden}a,button,p{font-size:1rem}a{text-decoration:none;cursor:pointer}img{display:block}button{cursor:pointer}::-webkit-scrollbar{width:10px;margin:2px}::-webkit-scrollbar-track{background:0 0}::-webkit-scrollbar-thumb{background:#820aea89;border:2px #2CBEC9 solid;border-radius:10px}::-webkit-scrollbar-thumb:hover{background:#8458FF}
+@charset "UTF-8";@media screen and (max-width:2560px){html{font-size:18px}}@media screen and (max-width:1920px){html{font-size:16px}}@media screen and (max-width:1600px){html{font-size:14px}}@media screen and (max-width:768px){html{font-size:12px}}@-webkit-keyframes fadeInDown{0%{opacity:0;transform:translateY(-100%)}100%{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{0%{opacity:0;transform:translateY(-100%)}100%{opacity:1;transform:translateY(0)}}@-webkit-keyframes append-animate{from{transform:scaleY(0);opacity:0}to{transform:scaleY(1);opacity:1}}@keyframes append-animate{from{transform:scaleY(0);opacity:0}to{transform:scaleY(1);opacity:1}}*,:after,:before{padding:0;margin:0;box-sizing:border-box;box-shadow:none;font-family:Inter,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}html{scroll-behavior:smooth}body{background-color:#020306}section{overflow:hidden}a,button,p{font-size:1rem}a{text-decoration:none;cursor:pointer}img{display:block}button{cursor:pointer}
+
+::-webkit-scrollbar{height: 8px; width:8px;margin:2px}
+::-webkit-scrollbar-track{background:0 0}
+::-webkit-scrollbar-thumb{background:#820aea89;border:1px #2CBEC9 solid;border-radius:10px}
+::-webkit-scrollbar-thumb:hover{background:#8458FF}
 
 .info-box,button.connect, a.connect,button.send-button{padding:.625rem 1.125rem;background:#2CBEC9;border:none;border-radius:78px;color:#fff;font-weight:600}
 
@@ -40,7 +45,7 @@
         transition: 0.5s opacity;}
     .info-box-B.active{opacity:1}
 
-    .info-box-B,button.connect, a.connect,button.send-button{padding:.625rem 1.5rem;background:#2CBEC9;border:solid 1px #fff;border-radius:60px;color:#fff;font-weight:600} 
+    .info-box-B,button.connect, a.connect,button.send-button{padding:.625rem 1.5rem;background:#2CBEC9;border-radius:60px;color:#fff;font-weight:600} 
 
 
 
