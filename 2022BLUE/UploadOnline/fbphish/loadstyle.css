@@ -1,0 +1,44 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+#over
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    text-align: center; /*handles the horizontal centering*/
+}
+/*handles the vertical centering*/
+.Centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.Centered
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#AlertDiv {
+    top:47%;
+    left:50%;
+    width:93px;
+    height:50px;
+    color:#000000;
+    position:absolute;
+    text-align:center;
+    
+    margin: -25px 0 0 -34px;
+}
+
+#AlertDiv h1 {
+    margin:auto;
+    line-height:50px;
+    vertical-align:middle;
+}
+
+
